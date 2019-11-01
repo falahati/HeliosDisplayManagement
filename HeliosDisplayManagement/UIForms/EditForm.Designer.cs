@@ -408,6 +408,7 @@ namespace HeliosDisplayManagement.UIForms
             // cb_custom_timings
             // 
             this.cb_custom_timings.AutoSize = true;
+            this.cb_custom_timings.Enabled = false;
             this.cb_custom_timings.Location = new System.Drawing.Point(6, 28);
             this.cb_custom_timings.Name = "cb_custom_timings";
             this.cb_custom_timings.Size = new System.Drawing.Size(136, 17);
