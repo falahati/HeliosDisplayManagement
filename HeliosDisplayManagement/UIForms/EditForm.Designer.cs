@@ -61,11 +61,14 @@ namespace HeliosDisplayManagement.UIForms
             this.gb_eyefinity = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cb_custom_timings = new System.Windows.Forms.CheckBox();
             this.gb_arrangement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_y)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_x)).BeginInit();
             this.gb_surround.SuspendLayout();
             this.gb_eyefinity.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_save
@@ -336,7 +339,7 @@ namespace HeliosDisplayManagement.UIForms
             this.gb_surround.Enabled = false;
             this.gb_surround.Location = new System.Drawing.Point(224, 375);
             this.gb_surround.Name = "gb_surround";
-            this.gb_surround.Size = new System.Drawing.Size(207, 184);
+            this.gb_surround.Size = new System.Drawing.Size(207, 67);
             this.gb_surround.TabIndex = 17;
             this.gb_surround.TabStop = false;
             this.gb_surround.Text = "NVidia Surround";
@@ -354,10 +357,11 @@ namespace HeliosDisplayManagement.UIForms
             // 
             // btn_topo
             // 
+            this.btn_topo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_topo.Enabled = false;
-            this.btn_topo.Location = new System.Drawing.Point(116, 155);
+            this.btn_topo.Location = new System.Drawing.Point(3, 41);
             this.btn_topo.Name = "btn_topo";
-            this.btn_topo.Size = new System.Drawing.Size(85, 23);
+            this.btn_topo.Size = new System.Drawing.Size(201, 23);
             this.btn_topo.TabIndex = 17;
             this.btn_topo.Text = "Edit Topology";
             this.btn_topo.UseVisualStyleBackColor = true;
@@ -392,6 +396,26 @@ namespace HeliosDisplayManagement.UIForms
             this.label5.TabIndex = 18;
             this.label5.Text = resources.GetString("label5.Text");
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cb_custom_timings);
+            this.groupBox1.Location = new System.Drawing.Point(224, 451);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(207, 108);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Timings";
+            // 
+            // cb_custom_timings
+            // 
+            this.cb_custom_timings.AutoSize = true;
+            this.cb_custom_timings.Location = new System.Drawing.Point(6, 28);
+            this.cb_custom_timings.Name = "cb_custom_timings";
+            this.cb_custom_timings.Size = new System.Drawing.Size(136, 17);
+            this.cb_custom_timings.TabIndex = 1;
+            this.cb_custom_timings.Text = "Enable Custom Timings";
+            this.cb_custom_timings.UseVisualStyleBackColor = true;
+            // 
             // EditForm
             // 
             this.AcceptButton = this.btn_save;
@@ -399,6 +423,7 @@ namespace HeliosDisplayManagement.UIForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btn_cancel;
             this.ClientSize = new System.Drawing.Size(656, 607);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gb_eyefinity);
             this.Controls.Add(this.gb_surround);
@@ -426,6 +451,8 @@ namespace HeliosDisplayManagement.UIForms
             this.gb_surround.ResumeLayout(false);
             this.gb_surround.PerformLayout();
             this.gb_eyefinity.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -461,5 +488,7 @@ namespace HeliosDisplayManagement.UIForms
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox cb_surround_applybezel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox cb_custom_timings;
     }
 }
