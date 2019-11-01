@@ -461,5 +461,10 @@ namespace HeliosDisplayManagement.UIForms
         {
             Profile.isCustomTimeEnabled = cb_custom_timings.Checked;
         }
+
+        private void nud_timing_ValueChanged(object sender, EventArgs e)
+        {
+            Profile.switchTime = (int) nud_timing.Value;
+        }
     }
 }
