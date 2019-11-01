@@ -70,7 +70,7 @@ namespace HeliosDisplayManagement.UIForms
                                 failed = true;
                             }
                         }, TaskCreationOptions.LongRunning);
-                    }, 3, 30).ShowDialog(this) !=
+                    }, 3, Profile.switchTime).ShowDialog(this) !=
                     DialogResult.Cancel)
                 {
                     if (failed)
@@ -84,7 +84,7 @@ namespace HeliosDisplayManagement.UIForms
                             () =>
                             {
                                 Task.Factory.StartNew(() => currentProfile.Apply(), TaskCreationOptions.LongRunning);
-                            }, 60, 30) {CancellationMessage = Language.Reverting_in}.ShowDialog(this);
+                            }, 60, Profile.switchTime) {CancellationMessage = Language.Reverting_in}.ShowDialog(this);
                     }
                 }
 

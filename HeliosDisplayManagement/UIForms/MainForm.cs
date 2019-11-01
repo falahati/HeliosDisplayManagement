@@ -64,7 +64,7 @@ namespace HeliosDisplayManagement.UIForms
                         () =>
                         {
                             Task.Factory.StartNew(() => dv_profile.Profile.Apply(), TaskCreationOptions.LongRunning);
-                        }, 3, 30).ShowDialog(this) !=
+                        }, 3, dv_profile.Profile.switchTime).ShowDialog(this) !=
                     DialogResult.Cancel)
                 {
                     ReloadProfiles();
