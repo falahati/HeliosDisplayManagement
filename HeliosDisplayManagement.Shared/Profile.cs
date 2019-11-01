@@ -111,13 +111,13 @@ namespace HeliosDisplayManagement.Shared
 
         public string Name { get; set; }
 
-        public bool isCustomTimeEnabled { get; set; } = false;
+        public bool IsCustomTimeEnabled { get; set; } 
 
         public int switchTime
         {
             get
             {
-                if (!isCustomTimeEnabled) { return switchTimeDefault; }
+                if (!IsCustomTimeEnabled) { return switchTimeDefault; }
                 return _switchTime;
             }
             set => _switchTime = value;
