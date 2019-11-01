@@ -451,7 +451,7 @@ namespace HeliosDisplayManagement.UIForms
 
         private void cb_custom_timings_CheckedChanged(object sender, EventArgs e)
         {
-
+            Profile.isCustomTimeEnabled = cb_custom_timings.Checked;
         }
     }
 }

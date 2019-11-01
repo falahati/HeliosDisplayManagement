@@ -36,6 +36,21 @@ namespace HeliosDisplayManagement.Shared
 
         public string Id { get; set; } = Guid.NewGuid().ToString("B");
 
+        public static int switchTimeDefault = 30;
+
+        public bool isCustomTimeEnabled { get; set; } = false;
+
+        private int _switchTime = switchTimeDefault;
+        public int switchTime
+        {
+            get
+            {
+                if (!isCustomTimeEnabled) return switchTimeDefault;
+                return _switchTime;
+            }
+            set => _switchTime = value;
+        }
+
         [JsonIgnore]
         public bool IsActive
         {

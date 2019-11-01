@@ -63,12 +63,15 @@ namespace HeliosDisplayManagement.UIForms
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cb_custom_timings = new System.Windows.Forms.CheckBox();
+            this.nud_timing = new System.Windows.Forms.NumericUpDown();
+            this.time_set_label = new System.Windows.Forms.Label();
             this.gb_arrangement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_y)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_x)).BeginInit();
             this.gb_surround.SuspendLayout();
             this.gb_eyefinity.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_timing)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_save
@@ -397,6 +400,8 @@ namespace HeliosDisplayManagement.UIForms
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.time_set_label);
+            this.groupBox1.Controls.Add(this.nud_timing);
             this.groupBox1.Controls.Add(this.cb_custom_timings);
             this.groupBox1.Location = new System.Drawing.Point(224, 451);
             this.groupBox1.Name = "groupBox1";
@@ -416,6 +421,22 @@ namespace HeliosDisplayManagement.UIForms
             this.cb_custom_timings.Text = "Enable Custom Timings";
             this.cb_custom_timings.UseVisualStyleBackColor = true;
             this.cb_custom_timings.CheckedChanged += new System.EventHandler(this.cb_custom_timings_CheckedChanged);
+            // 
+            // nud_timing
+            // 
+            this.nud_timing.Location = new System.Drawing.Point(6, 54);
+            this.nud_timing.Name = "nud_timing";
+            this.nud_timing.Size = new System.Drawing.Size(34, 20);
+            this.nud_timing.TabIndex = 2;
+            // 
+            // time_set_label
+            // 
+            this.time_set_label.AutoSize = true;
+            this.time_set_label.Location = new System.Drawing.Point(46, 56);
+            this.time_set_label.Name = "time_set_label";
+            this.time_set_label.Size = new System.Drawing.Size(112, 13);
+            this.time_set_label.TabIndex = 3;
+            this.time_set_label.Text = "Swap Splash Duration";
             // 
             // EditForm
             // 
@@ -454,6 +475,7 @@ namespace HeliosDisplayManagement.UIForms
             this.gb_eyefinity.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_timing)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,5 +513,7 @@ namespace HeliosDisplayManagement.UIForms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox cb_custom_timings;
+        private System.Windows.Forms.NumericUpDown nud_timing;
+        private System.Windows.Forms.Label time_set_label;
     }
 }
