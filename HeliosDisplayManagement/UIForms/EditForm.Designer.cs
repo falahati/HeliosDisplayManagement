@@ -36,7 +36,6 @@ namespace HeliosDisplayManagement.UIForms
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_apply = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.dv_profile = new HeliosDisplayManagement.Shared.UserControls.DisplayView();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lv_monitors = new System.Windows.Forms.ListView();
@@ -65,6 +64,7 @@ namespace HeliosDisplayManagement.UIForms
             this.cb_custom_timings = new System.Windows.Forms.CheckBox();
             this.nud_timing = new System.Windows.Forms.NumericUpDown();
             this.time_set_label = new System.Windows.Forms.Label();
+            this.dv_profile = new HeliosDisplayManagement.Shared.UserControls.DisplayView();
             this.gb_arrangement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_y)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_x)).BeginInit();
@@ -107,24 +107,6 @@ namespace HeliosDisplayManagement.UIForms
             this.btn_cancel.TabIndex = 7;
             this.btn_cancel.Text = global::HeliosDisplayManagement.Resources.Language.Cancel;
             this.btn_cancel.UseVisualStyleBackColor = true;
-            // 
-            // dv_profile
-            // 
-            this.dv_profile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dv_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.dv_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dv_profile.Font = new System.Drawing.Font("Consolas", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dv_profile.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.dv_profile.Location = new System.Drawing.Point(-1, -1);
-            this.dv_profile.Margin = new System.Windows.Forms.Padding(18);
-            this.dv_profile.Name = "dv_profile";
-            this.dv_profile.PaddingX = 100;
-            this.dv_profile.PaddingY = 100;
-            this.dv_profile.Profile = null;
-            this.dv_profile.Size = new System.Drawing.Size(658, 236);
-            this.dv_profile.TabIndex = 2;
             // 
             // txt_name
             // 
@@ -413,7 +395,6 @@ namespace HeliosDisplayManagement.UIForms
             // cb_custom_timings
             // 
             this.cb_custom_timings.AutoSize = true;
-            this.cb_custom_timings.Enabled = false;
             this.cb_custom_timings.Location = new System.Drawing.Point(6, 28);
             this.cb_custom_timings.Name = "cb_custom_timings";
             this.cb_custom_timings.Size = new System.Drawing.Size(136, 17);
@@ -428,6 +409,7 @@ namespace HeliosDisplayManagement.UIForms
             this.nud_timing.Name = "nud_timing";
             this.nud_timing.Size = new System.Drawing.Size(34, 20);
             this.nud_timing.TabIndex = 2;
+            this.nud_timing.ValueChanged += new System.EventHandler(this.nud_timing_ValueChanged);
             // 
             // time_set_label
             // 
@@ -437,6 +419,24 @@ namespace HeliosDisplayManagement.UIForms
             this.time_set_label.Size = new System.Drawing.Size(112, 13);
             this.time_set_label.TabIndex = 3;
             this.time_set_label.Text = "Swap Splash Duration";
+            // 
+            // dv_profile
+            // 
+            this.dv_profile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dv_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.dv_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dv_profile.Font = new System.Drawing.Font("Consolas", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dv_profile.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.dv_profile.Location = new System.Drawing.Point(-1, -1);
+            this.dv_profile.Margin = new System.Windows.Forms.Padding(18);
+            this.dv_profile.Name = "dv_profile";
+            this.dv_profile.PaddingX = 100;
+            this.dv_profile.PaddingY = 100;
+            this.dv_profile.Profile = null;
+            this.dv_profile.Size = new System.Drawing.Size(658, 236);
+            this.dv_profile.TabIndex = 2;
             // 
             // EditForm
             // 
