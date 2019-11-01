@@ -117,7 +117,7 @@ namespace HeliosDisplayManagement.Shared
         {
             get
             {
-                if (!isCustomTimeEnabled) return switchTimeDefault;
+                if (!isCustomTimeEnabled) { return switchTimeDefault; }
                 return _switchTime;
             }
             set => _switchTime = value;
