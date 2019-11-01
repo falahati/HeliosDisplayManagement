@@ -74,7 +74,6 @@ namespace HeliosDisplayManagement.UIForms
             // btn_save
             // 
             this.btn_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_save.Enabled = false;
             this.btn_save.Location = new System.Drawing.Point(569, 572);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(75, 23);
