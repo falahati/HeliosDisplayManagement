@@ -23,6 +23,14 @@ namespace HeliosDisplayManagement.UIForms
             Text = string.Format(Text, profile.Name);
             txt_name.Text = profile.Name;
             dv_profile.Profile = profile;
+
+            nud_timing.Value = profile.switchTime;
+            nud_timing.Minimum = 0;
+            cb_custom_timings.Checked = profile.isCustomTimeEnabled;
+            nud_timing.Enabled = profile.isCustomTimeEnabled;
+            time_set_label.Enabled = profile.isCustomTimeEnabled;
+
+
             RefreshMonitors();
         }
 
