@@ -456,7 +456,11 @@ namespace HeliosDisplayManagement.UIForms
 
         private void cb_custom_timings_CheckedChanged(object sender, EventArgs e)
         {
-            CustomTimeEnableChange(cb_custom_timings.Checked);
+            // Accessing private variable explicitly here because the linter wont
+            // let me make this an instance method otherwise
+ 
+            bool toEnable = cb_custom_timings.Checked;
+            CustomTimeEnableChange(toEnable);
         }
 
         private void nud_timing_ValueChanged(object sender, EventArgs e)
