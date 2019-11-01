@@ -21,6 +21,9 @@ namespace HeliosDisplayManagement.Shared
         private static Profile _currentProfile;
 
         public static Version Version = new Version(2, 0);
+        public static readonly int switchTimeDefault = 30;
+
+        private int _switchTime = switchTimeDefault;
 
         static Profile()
         {
@@ -35,21 +38,6 @@ namespace HeliosDisplayManagement.Shared
         }
 
         public string Id { get; set; } = Guid.NewGuid().ToString("B");
-
-        public static readonly int switchTimeDefault = 30;
-
-        public bool isCustomTimeEnabled { get; set; } = false;
-
-        private int _switchTime = switchTimeDefault;
-        public int switchTime
-        {
-            get
-            {
-                if (!isCustomTimeEnabled) return switchTimeDefault;
-                return _switchTime;
-            }
-            set => _switchTime = value;
-        }
 
         [JsonIgnore]
         public bool IsActive
@@ -122,6 +110,18 @@ namespace HeliosDisplayManagement.Shared
         }
 
         public string Name { get; set; }
+
+        public bool isCustomTimeEnabled { get; set; } = false;
+
+        public int switchTime
+        {
+            get
+            {
+                if (!isCustomTimeEnabled) return switchTimeDefault;
+                return _switchTime;
+            }
+            set => _switchTime = value;
+        }
 
         public Path[] Paths { get; set; } = new Path[0];
 
