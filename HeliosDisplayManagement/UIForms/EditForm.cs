@@ -26,10 +26,7 @@ namespace HeliosDisplayManagement.UIForms
 
             nud_timing.Value = profile.switchTime;
             nud_timing.Minimum = 0;
-            cb_custom_timings.Checked = profile.isCustomTimeEnabled;
-            nud_timing.Enabled = profile.isCustomTimeEnabled;
-            time_set_label.Enabled = profile.isCustomTimeEnabled;
-
+            CustomTimeEnableChange(profile.isCustomTimeEnabled);
 
             RefreshMonitors();
         }
@@ -472,6 +469,7 @@ namespace HeliosDisplayManagement.UIForms
             nud_timing.Enabled = isEnabled;
             time_set_label.Enabled = isEnabled;
             Profile.isCustomTimeEnabled = isEnabled;
+            cb_custom_timings.Checked = isEnabled;
         }
     }
 }
