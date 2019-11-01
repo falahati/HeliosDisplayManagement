@@ -448,5 +448,10 @@ namespace HeliosDisplayManagement.UIForms
 
             return true;
         }
+
+        private void cb_custom_timings_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

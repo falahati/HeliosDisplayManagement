@@ -415,6 +415,7 @@ namespace HeliosDisplayManagement.UIForms
             this.cb_custom_timings.TabIndex = 1;
             this.cb_custom_timings.Text = "Enable Custom Timings";
             this.cb_custom_timings.UseVisualStyleBackColor = true;
+            this.cb_custom_timings.CheckedChanged += new System.EventHandler(this.cb_custom_timings_CheckedChanged);
             // 
             // EditForm
             // 
