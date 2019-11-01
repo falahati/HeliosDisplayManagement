@@ -77,7 +77,7 @@ namespace HeliosDisplayManagement.UIForms
             this.progressBar.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.progressBar.OuterMargin = -8;
             this.progressBar.OuterWidth = 6;
-            this.progressBar.ProgressColor = System.Drawing.Color.DodgerBlue;
+            this.progressBar.ProgressColor = System.Drawing.SystemColors.Desktop;
             this.progressBar.ProgressWidth = 10;
             this.progressBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progressBar.Size = new System.Drawing.Size(135, 135);
