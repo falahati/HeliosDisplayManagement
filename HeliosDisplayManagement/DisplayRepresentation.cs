@@ -24,10 +24,6 @@ namespace HeliosDisplayManagement
 
             IsAvailable = display.IsAvailable;
 
-            if (IsAvailable)
-            {
-                PossibleSettings = GetDisplay()?.GetPossibleSettings()?.ToArray() ?? new DisplayPossibleSetting[0];
-            }
         }
 
         public DisplayRepresentation(PathTarget display)
@@ -36,17 +32,26 @@ namespace HeliosDisplayManagement
             Path = display.DevicePath;
             IsAvailable = GetDisplay()?.IsAvailable ?? false;
 
-            if (IsAvailable)
-            {
-                PossibleSettings = GetDisplay()?.GetPossibleSettings()?.ToArray() ?? new DisplayPossibleSetting[0];
-            }
         }
 
         public bool IsAvailable { get; }
         public string Name { get; }
         public string Path { get; }
 
-        public DisplayPossibleSetting[] PossibleSettings { get; }
+        public DisplayPossibleSetting[] PossibleSettings
+        {
+            get
+            {
+                if (IsAvailable)
+                {
+                    return GetDisplay()?.GetPossibleSettings()?.ToArray() ?? new DisplayPossibleSetting[0];
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
 
         public static IEnumerable<DisplayRepresentation> GetDisplays(Profile profile = null)
         {
