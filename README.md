@@ -1,4 +1,7 @@
 # Helios Display Management
+[![](https://img.shields.io/github/license/falahati/HeliosDisplayManagement.svg?style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/blob/master/LICENSE)
+[![](https://img.shields.io/github/commit-activity/y/falahati/HeliosDisplayManagement.svg?style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/commits/master)
+[![](https://img.shields.io/github/issues/falahati/HeliosDisplayManagement.svg?style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/issues)
 
 An open source tool for display profile management. Readily switch between display profiles & settings.
 
@@ -7,6 +10,9 @@ An open source tool for display profile management. Readily switch between displ
 <div style="text-align:center"><img src="READMEAssets/Preview.png"/></div>
 
 ## Download
+[![](https://img.shields.io/github/downloads/falahati/HeliosDisplayManagement/total.svg?style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/releases)
+[![](https://img.shields.io/github/tag-date/falahati/HeliosDisplayManagement.svg?label=version&style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/releases)
+
 The latest version of this application is available for download via the [release](https://github.com/falahati/HeliosDisplayManagement/releases) page.
 
 ## Help me fund my own Death Star
