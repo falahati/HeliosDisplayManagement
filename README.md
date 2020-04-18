@@ -9,12 +9,15 @@ An open source tool for display profile management. Readily switch between displ
 ## Download
 The latest version of this application is available for download via the [release](https://github.com/falahati/HeliosDisplayManagement/releases) page.
 
-## Donation
-[<img width="24" height="24" src="http://icons.iconarchive.com/icons/sonya/swarm/256/Coffee-icon.png"/>Every coffee counts! :) -- Also, donations assist development and are greatly appreciated](https://www.coinpayments.net/index.php?cmd=_donate&reset=1&merchant=820707aded07845511b841f9c4c335cd&item_name=Donate&currency=USD&amountf=10.00000000&allow_amount=1&want_shipping=0&allow_extra=1) (Crypto - PayPal)
+## Help me fund my own Death Star
+
+[![](https://img.shields.io/badge/crypto-CoinPayments-8a00a3.svg?style=flat-square)](https://www.coinpayments.net/index.php?cmd=_donate&reset=1&merchant=820707aded07845511b841f9c4c335cd&item_name=Donate&currency=USD&amountf=20.00000000&allow_amount=1&want_shipping=0&allow_extra=1)
+[![](https://img.shields.io/badge/shetab-ZarinPal-8a00a3.svg?style=flat-square)](https://zarinp.al/@falahati)
+[![](https://img.shields.io/badge/usd-Paypal-8a00a3.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ramin.graphix@gmail.com&lc=US&item_name=Donate&no_note=0&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
 
 **--OR--**
 
-You can always donate your time by contributing to the project and implementing one of the planned features.
+You can always donate your time by contributing to the project or by introducing it to others.
 
 ## What it does
 
@@ -142,7 +145,7 @@ Feel free to report missing features or bugs using the project [issue tracker](h
 - [**NvAPIWrapper**](https://github.com/falahati/NvAPIWrapper/): NvAPIWrapper is a .Net wrapper for NVIDIA public API, capable of managing all aspects of a display setup using NVIDIA GPUs
 
 ## License
-Copyright (C) 2019 Soroush Falahati
+Copyright (C) 2017-2020 Soroush Falahati
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
