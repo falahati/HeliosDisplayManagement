@@ -9,6 +9,11 @@ An open source tool for display profile management. Readily switch between displ
 
 <div style="text-align:center"><img src="READMEAssets/Preview.png"/></div>
 
+### NOTICE 26-3-2021
+Since I am quite busy for the while now, I wasn't able to put in the time that this projects and you guys deserve. And unfortunately, I have no idea when I can get back to development on this project. So things are on hold for now as they were for the last year. Meanwhile, [Terry MacDonald](https://github.com/terrymacdonald) decided to take a fork from this project and fix many of the problems that you guys reported over the years and even add many more features like Audio device management; rebranded as new software named [DisplayMagician](https://github.com/terrymacdonald/DisplayMagician) that just got its [first full release](https://github.com/terrymacdonald/DisplayMagician/releases) a week ago. So make sure to check it out as it should be better maintained and more feature rich. I am still committed to the maintenance of the underlying libraries that are used for both these projects as much as I can.
+That being said, I am not abandoning this project officially and I might get back to it at a later time, hopefully even incorporating some of the changes made by Terry. However, I felt that for the time being and considering the ambiguity of the situation, this is my responsibility to inform you of these issues and provide you with a great alternative made by a great developer.
+[Check out DisplayMagician by clicking here](https://github.com/terrymacdonald/DisplayMagician)
+
 ## Download
 [![](https://img.shields.io/github/downloads/falahati/HeliosDisplayManagement/total.svg?style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/releases)
 [![](https://img.shields.io/github/tag-date/falahati/HeliosDisplayManagement.svg?label=version&style=flat-square)](https://github.com/falahati/HeliosDisplayManagement/releases)
